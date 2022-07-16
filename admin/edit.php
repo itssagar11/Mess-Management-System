@@ -166,28 +166,6 @@ th, td {
 
                                 <!-- navigation bar -->
 
-<div class="navbar" style="margin-top:-18px; width:100%; position: -webkit-sticky;position: sticky; top: 0px;">
- <ul>
-
-  <a href="#">Dashboard</a>
-
-    <div class="dropdown">
-    <button class="dropbtn">Inventory 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="../admin/purchase.php">Purchase</a>
-      <a href="../admin/issue.php">Issue item</a>
-      <a href="../admin/stock.php">Stock</a>
-    </div>
-    </div>
-     <a href="../admin/purchaserecord.php">Purchase Item Record</a>
-     <a href="../admin/issuerecord.php">Issue Item Record</a>
-     <a href="../admin/studentrecord.php">Student Record</a>
-     <a href="../admin/logout.php" style="float: right; margin-right: 20px;">Log out</a>
-           
-    </ul>
-  </div>
 				
 		<!--Main Content start-->
 			<div style="height: 60%; padding: 10px 50px;color:white"> 

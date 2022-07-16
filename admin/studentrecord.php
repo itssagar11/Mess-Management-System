@@ -78,30 +78,6 @@
 <body>
     <?php include '../html/header.php'; ?>   
 
-    
-    <div class="navbar">
- <ul>
-
-  <a href="../admin/home.php">Dashboard</a>
-
-  <div class="dropdown">
-    <!-- <button class="dropbtn">Inventory 
-      <i class="fa fa-caret-down"></i>
-    </button> -->
-    <div class="dropdown-content">
-      <a href="../admin/purchase.php">Purchase Item</a>
-      <a href="../admin/issue.php">Issued Item</a>
-        <a href="../admin/stock.php">Stock</a>
-    </div>
-    </div>
-     <!-- <a href="../admin/purchaserecord.php">Purchase item record</a>
-     <a href="../admin/issuerecord.php">Issue item record</a>
-     <a href="">Student record</a> -->
-     <a href="../admin/logout.php" style="float: right; margin-right: 20px;">Log out</a>
-           
-    </ul>
-  </div>
- 
            <div id="" style="margin-top:100px;">
       <form action="#" method="post" class="example" style="margin:auto;max-width:500px">
           <input type="text" name="searchitem" placeholder="Enter Enrollment number" required>

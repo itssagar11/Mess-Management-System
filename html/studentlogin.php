@@ -31,164 +31,108 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <style>
-        body {
-            background-color: whitesmoke;
-            background-image: url(../img/food.jpg);
-            background-size: cover;
-        }
-
-        form {
-            background-color: rgb(0, 0, 0, 0.8);
-            width: 30%;
-            margin-left: 30%;
-            margin-top: 30px;
-            margin-right: 40%;
-            padding: 10px;
-            border-radius: 5px;
-        }
-
-        legend {
-            color: darkorange;
-        }
-
-        input[type=text],
-        input[type=password] {
-            width: 85%;
-            background-color: rgb(0, 0, 0, 0.1);
-            padding: 5px;
-            margin-left: 25px;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            display: inline-block;
-            border: 1px solid grey;
-            box-sizing: border-box;
-            color: white;
-        }
-
-        lable {
-            color: white;
-            margin-left: 28px;
-            text-decoration-style: solid;
-            font-size: 20px;
-            text-shadow: 1px 1px 1px gray
-        }
-
-        .submitbtn {
-            background-color: #4CAF50;
-            color: black;
-            padding: 14px 20px;
-            margin: 8px 0;
-            cursor: pointer;
-            width: 86%;
-            margin-left: 24px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: cadetblue;
-            border: none;
-            color: #FFFFFF;
-            text-align: center;
-            font-size: 15px;
-            padding: 12px 20px;
-            width: 120px;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin-right: 7%;
-            margin-top: 20px;
-            float: right;
-            border-radius: 3px;
-            box-shadow: 3px 3px #CCD6DD;
-        }
-
-        .button span {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.5s;
-        }
-
-        .button span:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.5s;
-        }
-
-        .button:hover span {
-            padding-right: 25px;
-        }
-
-        .button:hover span:after {
-            opacity: 1;
-            right: 0;
-        }
-
-        .navbar {
-            margin-top: -18px;
-            width: 100%;
-            position: -webkit-sticky;
-            position: sticky;
-        }
+      body{
+      
+       
+      font-family: "Rubik", sans-serif;
+     justify-content:space-around;
+     align-items:center;
+     flex-wrap:wrap;
+     
+   }
+   .form-container{
+     margin:auto;
+     margin-top: 10%;
+     width:300px;
+   }
+   .branding{
+     width:350px;
+     margin:auto;
+   }
+   input{
+     margin:15px 1px 15px 1px;
+     width:95%;
+     height:30px;
+     padding:2px 2px;
+     border:none;
+     border-bottom:1px solid #878787;
+     
+     
+    
+   }
+   .button{
+     background-color:#000000;
+     border:1px solid #000000;
+     color:#ffffff;
+     padding:10px;
+     width:80%;
+     border-radius:20px;
+     fot-size:16px;
+     font-width:normal;
+   }
+   input:focus{
+     outline:none;
+     width:96%;
+   }
+   hr{
+     width:10%;
+     height:3px;
+     background-color:#FCA435;
+     border:none;
+   }
+   .quotes{
+     color:#FCA435;
+     font-size:2rem;
+   }
+   .otp_box{
+     display:none;
+   }
+  .navbar{
+   margin-top:10px;
+ 
+  }
     </style>
 </head>
 
 <!-- BODY SECTION START  -->
 
 <body>
-    <?php include 'header.php'; ?>
 
     <!-- Navigation Bar Start -->
-    <div class="navbar">
-        <ul>
-            <a href="../index.php">Home</a>
-
-            <div class="dropdown">
-                <button class="dropbtn">Registration
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="adminregistration.php">Admin</a>
-                    <a href="studentregistration.php">Student</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Login
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="adminlogin.php">Admin</a>
-                    <a href="#">Student</a>
-                </div>
-            </div>
-
-            <!-- <a href="facilities.php">Facilities</a> -->
-            <a href="help.php">Help</a>
-
-        </ul>
-    </div> <!-- Navigation Bar Ends -->
+   <!-- Navigation Bar Ends -->
 
     <!--  Student Login Form Start  -->
-    <form action="#" method="post">
-        <fieldset>
-            <legend><b>LOGIN</b></legend>
-            <lable>Username</lable><br />
-            <input id="enroll" name="enroll" type="text" placeholder="Enter Enrollment Number" required><br />
 
-            <lable>Password<br /></lable>
-            <input id="password" name="password" type="password" placeholder="Enter Password"><br />
-
+    <div class="form-container">
+         <center>
+      <h1>
+        Sign in with email
+      </h1>
+  <p>
+        Enter the email address  and password associated with your account,.
+      </p>
+            <!-- Login -->
+            <form action="" method="POST">
+            <input type="text" class="textbox login_box" id="enroll" name="enroll placeholder="Email" placeholder="enter email" /><br>
+        
+            <input type="Password" class="textbox login_box" id="password" name="password" placeholder="Password"/><br>
+        
             <button class="button" style="vertical-align:middle"><span>Submit</span></button>
-
-        </fieldset>
-    </form> <!--  Student Login Form End  -->
-
-    <div style="margin-top:150px">
-        <?php include('../html/footer.php'); ?>
+             </form>
+            <small id="message"> </small>
+        
+</center> 
     </div>
+    <div class="branding">
+      <center>
+      <hr>
+      <h3 class="quotes">
+       Graphic Era Deemed to be University
+      </h3>
+      <small ><a href="geu.ac.in">geu.ac.in</a>Dehradun</small>
+        </center>
+    </div>
+    
 </body>
 
 </html>

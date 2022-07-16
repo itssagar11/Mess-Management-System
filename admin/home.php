@@ -156,30 +156,6 @@ include("admindbconn.php");
 <body>
     <?php include '../html/header.php'; ?>
 
-    <!-- navigation bar -->
-
-    <div class="navbar" style="margin-top:-18px; width:100%; position: -webkit-sticky;position: sticky; top: 0px;">
-        <ul>
-
-            <a href="#">Dashboard</a>
-
-            <div class="dropdown">
-                <!-- <button class="dropbtn">Inventory 
-      <i class="fa fa-caret-down"></i>
-    </button> -->
-                <div class="dropdown-content">
-                    <a href="../admin/purchase.php">Purchase</a>
-                    <a href="../admin/issue.php">Issue item</a>
-                    <a href="../admin/stock.php">Stock</a>
-                </div>
-            </div>
-            <!-- <a href="../admin/purchaserecord.php">Purchase Item Record</a>
-     <a href="../admin/issuerecord.php">Issue Item Record</a> -->
-            <a href="../admin/studentrecord.php">Student Record</a>
-            <a href="../admin/logout.php" style="float: right; margin-right: 20px;">Log out</a>
-
-        </ul>
-    </div>
 
 
     <div id="profile">
@@ -194,7 +170,7 @@ include("admindbconn.php");
         while ($row = mysqli_fetch_array($sqldata, MYSQLI_ASSOC)) {
         ?>
             <div class="i">
-                <center><?php echo "<img src='../html/images/" . $row['photo'] . "' class='ima'/>" ?></center>
+                <center><?php echo "<img src='../img/" . $row['photo'] . "' class='ima'/>" ?></center>
             </div>
             <div id="record" style="margin-top: 30px; margin-left: 30px; height:auto">
 

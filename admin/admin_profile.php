@@ -9,7 +9,7 @@ $r=mysqli_fetch_array($sq);
 
 if(isset($_POST['submit']))
 {
-    $target = "../html/images/".basename($_FILES['photo']['name']);
+    $target = "../img/".basename($_FILES['photo']['name']);
     $name=$_POST['name'];
     $address=$_POST['address'];
     $email=$_POST['email'];

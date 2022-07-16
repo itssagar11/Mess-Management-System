@@ -127,35 +127,7 @@
     <?php include 'header.php'; ?>
     
                                         <!-- Navigation Bar Start -->
-    <div class="navbar">
-        <ul>
-            <a href="../index.php">Home</a>
-            
-            <div class="dropdown">
-                <button class="dropbtn">Registration 
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#">Admin</a>
-                    <a href="studentregistration.php">Student</a>
-                </div>
-            </div>
-            
-            <div class="dropdown">
-                <button class="dropbtn">Login
-                    <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="dropdown-content">
-                    <a href="adminlogin.php">Admin</a>
-                    <a href="studentlogin.php">Student</a>
-                </div> 
-            </div>
-            
-            <!-- <a href="facilities.php">Facilities</a> -->
-            <a href="help.php">Help</a>
-           
-        </ul>
-    </div>                  <!-- Navigation Bar Ends -->
+               <!-- Navigation Bar Ends -->
    
                             <!-- Admin Registration Form Start -->
     <form action="#" method="post" enctype="multipart/form-data">
